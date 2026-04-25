@@ -1,0 +1,6 @@
+@API_sesiEstoque_HostAddress = http://localhost:5050
+
+GET {{API_sesiEstoque_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
