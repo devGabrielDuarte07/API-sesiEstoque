@@ -11,6 +11,8 @@ public partial class TabelaEmprestimo
 
     public int FerramentaId { get; set; }
 
+    public int Quantidade {  get; set; }
+
     public DateTime? DataRetirada { get; set; }
 
     public DateTime? DataDevolucao { get; set; }

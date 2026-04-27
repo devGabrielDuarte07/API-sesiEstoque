@@ -64,6 +64,9 @@ public partial class SesiEstoqueContext : DbContext
             entity.Property(e => e.UsuarioId)
                 .HasColumnType("int(11)")
                 .HasColumnName("usuario_id");
+            entity.Property(e => e.Quantidade)
+                .HasColumnType("int(11)")
+                .HasColumnName("quantidade");
 
             entity.HasOne(d => d.Ferramenta).WithMany(p => p.TabelaEmprestimos)
                 .HasForeignKey(d => d.FerramentaId)
